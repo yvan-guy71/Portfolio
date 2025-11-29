@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Yvan-Guy KALIPO</h1>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#competence">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button style="margin-left: 20px"><a href="#" class="download">Télecharger Le CV</a></button>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="description" style="margin-top: 50px;">
+                <h2>Developpeur</h2>
+                <h4 style="width: 100%; text-align: left; white-space: normal;">Bienvenue,<br>Je suis Yvan KALIPO</h4>
+                <p style="width: 100%; font-size: 1.2rem; line-height: 1.8; color: white; text-align: left; white-space: normal;">Réaliser les meilleurs site c'est mon métier.<br>Ensemble pour un dévellopement minutieux de site<br>bien structurés et entrièrement responsive.</p>
+                <button class="moncv" style="margin-left: 20px;">Mon CV</button>
+                <button id="projets" style="margin-left: 20px;">Mes Projets</button>
+            </div>
+            <div class="image">
+                <img src="profile.jpg" width="330px" height="300px" style="border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; margin-top: 40px; margin-left: 20px" alt="Mon image">
+            </div>
+        </section>
+        <section id="about">
+            <div class="about-me">
+                <h4 style="text-align: center; font-size: 2.5rem; margin-bottom: 50px;">A propos de Moi</h4>
+                <div class="underline" style="margin-bottom: 30px;"></div>
+                <p style="text-align: center; font-size: 1.3rem; line-height: 1.8; max-width: 900px; margin: 0 auto; ">Je suis un développeur passionné par la création de sites web innovants et fonctionnels. Avec une expertise en HTML, CSS, JavaScript et d'autres technologies web, je m'efforce de concevoir des expériences utilisateur exceptionnelles. Mon objectif est de transformer les idées en réalité numérique tout en assurant une performance optimale et une esthétique attrayante.</p>
+                <em style="margin-top: 40px;">
+                <span class="projet-realise">Projets-Réalisés
+                    <p style="display: flex; font-size: 3rem; font-weight: bold; margin-left: 80px; margin-top: 20px; color:rgb(253, 190, 106)">4+</p>
+                </span>
+                <span class="année-experience">Année D'expériences
+                    <p style="display: flex; font-size: 3rem; font-weight: bold; margin-left: 120px; margin-top: 20px; color:rgb(89, 240, 139)">1+</p>
+                </span>
+                <span class="clients-satisfaits">Clients Satisfaits
+                    <p style="display: flex; font-size: 3rem; font-weight: bold; margin-left: 80px; margin-top: 20px; color:rgb(197, 40, 245)">25+</p>
+                </span>
+                </em>
+            </div>
+        </section>
+        <section id="services">
+            <div class="service" style="width: 100%;">
+                <h5>Mes Services</h5>
+                <div class="underline"></div>
+                <p style="text-align: center; font-size: 1.1rem; margin-top: 50px; line-height: 1.8;">Faire des idées en réalité numérique; je pourrais vous accompagner dans la création de sites web modernes,<br> performants et adaptés à vos besoins.</p>
+                <div class="home-service">
+                    <div class="dev-web">
+                        <i class="fa fa-laptop" aria-hidden="true" style="font-size: 80px; margin-bottom: 50px; color: aliceblue"></i>
+                        <h6>Développement Web</h6>
+                        <p style="display: flex; color:rgb(253, 190, 106); margin-top: 10px; text-align: left;">Création de sites web sur mesure</p>
+                    </div>
+                    <div class="web-design">
+                        <i class="fa fa-paint-brush" aria-hidden="true" style="font-size: 80px; margin-bottom: 50px; color: aliceblue"></i>
+                        <h6>Design UI/UX</h6>
+                        <p style="display: flex; color:rgb(89, 240, 139); margin-top: 10px; font-size: 1.2rem;">Conception d'interfaces attrayantes</p>
+                    </div>
+                    <div class="geeks">
+                        <i class="fa fa-mobile" aria-hidden="true" style="font-size:80px; margin-bottom: 50px; color: aliceblue"></i>
+                        <h6>Geeks</h6>
+                        <p style="display: flex; color:rgb(197, 40, 245); margin-top: 10px; font-size: 1.2rem;">Créatif, Capable de résoudre des problèmes<br> de manière originale. Patient Persévère face <br> aux bugs ou aux échecs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="home-realisations">
+                <h2 style="color: white; position: relative; margin-top: 40px; text-align: center; font-size: 2rem">Mes Réalisations</h2>
+                <div class="underline"></div>
+                <div class="pictures">
+                    
+                    <div class="project">
+                    <img src="projet_image/project1.png" alt="Project 1" width="600px" height="300px">
+                    <div class="projet-info">Plateforme de Lecture de Mangas en ligne</div>
+                    </div>
+                    <div class="project">
+                    <img src="projet_image/project2.png" alt="projet 2" width="600px" height="300px">
+                    <div class="projet-info">Application de Gestion des taches</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="competence">
+            <div class="competence-section">
+                <h2 style="color: white; margin-top: 40px; text-align: center; font-size: 2.3rem">Mes Compétences</h2>
+                <div class="underline"></div>
+                <p style="text-align: center; margin-top: 20px; font-size: 1.3rem;">Voici un apercu de mes compétences, acquise durant les projets que j'ai eu a réaliser</p>
+            <div class="competence-container">
+                <div class="skill">
+                <span>Développement Web</span>
+                <div class="bar">
+                    <div class="fill" data-percent="60" style="background-color: rgb(60, 60, 83);"></div>
+                </div>
+                <span class="percent">65%</span>
+            </div>
+            <div class="skill">
+                <span>Design UI/UX</span>
+                <div class="bar">
+                    <div class="fill" data-percent="70" style="background:rgb(60, 60, 83)"></div>
+                </div>
+                <span class="percent">70%</span>
+            </div>
+            <div class="skill">
+                <span>Techonologie de L'information</span>
+                <div class="bar">
+                    <div class="fill" data-percent="80" style="background-color: rgb(60, 60, 83);"></div>
+                </div>
+                <span class="percent">80%</span>
+            </div>
+            </div>
+            </div>
+        </section>
+        <section id="temoignage">
+            <div class="temoignage-section">
+                <h6 style="padding-top: 35px; font-size: 2rem;">Témoignages</h6>
+                <div class="underline" style="margin-bottom: 30px;"></div>
+                <p style="text-align: center; max-width: 600px; margin-top: 45px; display: flex; margin: 0 auto; line-height: 1.2">Les designs de Yvan-Guy KALIPO sont assez spéciaux, avec touche visuelle très attrayante. Cette fine touche a fait de notre site un véritable oisis pour nos visiteur, rien qu'une seule visite est une bénédiction visuelle. Je vous la recommande vivement.</p>
+                <div class="temoin-picture">
+                    <img src="projet_image/temoin.jpg" alt="Temoin" width="90px" height="90px" style="border-radius: 50%; margin-top: 45px;">
+                    <h4 style="font-size: 1.3rem;">Jean Paul</h4>
+                    <p>CEO De TechCorp</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="content">
+                <div class="contact-info">
+                   <h4>Contactez-nous</h4>
+                   <div class="underline"></div>
+                   <p style="text-align: center; margin-top: 25px;padding-bottom: 50px; max-width: 700px;">Veuillez nous contacter pour toute question et présente des infos néccessaires pour une collaboration future.</p>
+                    <div class="contact-item">
+                       <i class="fa fa-phone"></i>
+                       <span>+228 99 14 06 16</span>
+                    </div>
+                    <div class="contact-item">
+                       <i class="fa fa-envelope"></i>
+                       <span>armellesage66@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                       <i class="fa fa-map-marker-alt"></i>
+                       <span>Lomé-Togo</span>
+                    </div>
+                    <div class="contact-icon">
+                        <a href="https://github.com/yvan-guy71" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/yvan-guy-71-352395244/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/Yvan_Guy71" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/guyzo_dev__" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form" action="#">
+                        <input id="contact-name" type="text" name="name" placeholder="Votre Nom">
+                        <input id="contact-email" type="email" name="name" placeholder="Votre Email">
+                        <input id="contact-number" type="text" name="number" placeholder="Votre numéro de Téléphone"> 
+                        <textarea id="contact-message" name="message" placeholder="Votre Message..."></textarea>
+                        <button type="submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+            <footer>
+            <nav>
+            <ol>
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#competence">Compétences</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ol>
+            </nav>
+            <div class="social-icon">
+                <a href="https://github.com/yvan-guy71" class="social-icon"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yvan-guy-71-352395244/" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/Yvan_Guy71" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/guyzo_dev__" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div><p style="margin-top: 30px; text-align: center; color:black;font-style: inherit; font-size: 0.9rem; font-weight:bold;">&copy 2025 Yvan-Guy KALIPO. Tous droits réservés</p></div>
+           </footer>
+    </main>
+</body>
+</html>
