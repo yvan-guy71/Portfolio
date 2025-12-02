@@ -86,9 +86,12 @@ section {
     align-items: center;
     margin: 15px;
     margin-left: 100px;
-    margin-top: 10px;
+    margin-top: 20px;
     line-height: 45px;
 
+}
+section#hero {
+    background-color: #2d2d2dab;
 }
 
 h2 {
