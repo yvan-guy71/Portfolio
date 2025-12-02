@@ -469,22 +469,20 @@ ul li:hover {
   #main-nav ul { display: none; flex-direction: column; gap: 12px; width: 100%; }
   #main-nav ul.open { display: flex; }
 
-  /* Hero stack */
   #hero {
     flex-direction: column;
     align-items: center;
     text-align: center;
     padding: 24px 14px;
   }
-  .description { width: 100%; max-width: 100%; margin: 0 auto; }
+  .description { width: 100%; max-width: 100%; margin: 0; }
   .image { margin-top: 16px; }
 
-  /* About / Skills / Projects */
+
   .pictures { grid-template-columns: 1fr; gap: 16px; }
   .competence-container { grid-template-columns: 1fr; }
   .skill { margin-top: 8px; align-items: stretch; text-align: left; }
 
-  /* Contact */
   .contact-info { padding: 0 12px; }
   .contact-form { padding: 0 12px; }
   .contact-form form { padding-top: 0; margin-left: 0; max-width: 100%; }
@@ -495,7 +493,6 @@ ul li:hover {
   footer { grid-template-columns: 1fr; text-align: center; }
 }
 
-/* extra small screens */
 @media (max-width: 420px) {
   h2 { font-size: 2rem; }
   h4 { font-size: 1.2rem; }
