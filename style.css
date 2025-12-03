@@ -11,6 +11,7 @@
     --border-radius: 8px;
 }
 
+
 * {
     margin: 0;
 }
@@ -41,10 +42,10 @@ a {
 
 button {
     display: inline-block;
-    background-color: white;
+    background-color: #fff;
     padding: 10px;
     border-radius: 70px;
-    border: 1px solid  rgb(12, 11, 11);
+    border: 1.8px solid  rgba(243, 233, 233, 0.37);
     font-weight: bold;
 }
 
@@ -54,6 +55,7 @@ nav {
 button:hover {
     background-color: rgb(133, 104, 104);
     transform: translateY(-5px);
+    transition-duration: 200ms;
 }
 section {
     display: flex;
@@ -363,7 +365,7 @@ span {
 
 .contact-item  {
     margin-top: 20px;
-    line-height: 50px;
+    line-height: 40px;
     font-size: 2rem;
     gap: 25px;
     margin-left: 110px;
