@@ -9,23 +9,26 @@
     --transition: all 0.3s ease;
     --shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     --border-radius: 8px;
+    
 }
-
 
 * {
     margin: 0;
+    padding: 0;
 }
+
 body {
     background-color: var(--dark-bg);
     margin: 0;
-
 }
+
 header {
     display: flex;
     justify-content: space-between;
     background-color: rgb(250, 227, 200);
     padding: 25px;
     font-weight: 450;
+    align-items: center;
 }
 
 nav ul {
@@ -35,6 +38,34 @@ nav ul {
     align-items: center;
     font-weight: bold;
 }
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-toggle {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0;
+}
+
+.nav-toggle span {
+    width: 20px;
+    height: 2px;
+    background: #000;
+    display: block;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -59,7 +90,10 @@ button:hover {
 }
 section {
     display: flex;
+    width: 100%;
+    flex-wrap: wrap;
 }
+
 #projets {
     background-color: rgb(155, 51, 65);
     color: white;
@@ -76,11 +110,7 @@ section {
     width: 25%;
     
 }
-#moncv:hover {
-    background-color: rgb(51, 64, 75);
-    transform: rotateX(10deg) rotateY(20deg);
-    
-}
+
 .description, .image {
     width: 100%;
     flex: 1;
@@ -133,7 +163,7 @@ h1::after {
 }
 .about-me {
     display: inline-block;
-    position: absolute;
+    position: relative;
     font-size: 2rem;
     color: white;
     width: 100%;
@@ -456,56 +486,153 @@ ol li:hover,
 ul li:hover {
     text-decoration: underline;
 }
-
 @media (max-width: 1024px) {
-  .pictures { grid-template-columns: repeat(2, 1fr); }
-  .competence-container { grid-template-columns: repeat(2, 1fr); }
-  .content { grid-template-columns: 1fr; }
-  .project { width: 100%; }
-  .percent { margin-left: 0; }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .description, .image {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .pictures {
+        margin-right: 0;
+    }
+
+    .project {
+        width: 45%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contact-form form {
+        margin-left: 0;
+    }
+
+    .percent {
+        margin-left: 0;
+        text-align: center;
+    }
 }
+
 
 @media (max-width: 768px) {
-  * {margin: 0; margin-left: 0;}
-  header { padding: 12px 16px; }
-  nav { width: 100%; }
-  #nav-toggle { display: inline-flex; align-items: center; justify-content: center; }
-  #main-nav ul { display: none; flex-direction: column; gap: 12px; width: 100%; }
-  #main-nav ul.open { display: flex; }
 
-  #hero {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 24px 14px;
-  }
-  .description { width: 100%; max-width: 100%; margin: 0; }
-  .image { margin-top: 16px; }
+    header {
+        flex-direction: column;
+    }
 
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .pictures { grid-template-columns: 1fr; gap: 16px; }
-  .competence-container { grid-template-columns: 1fr; }
-  .skill { margin-top: 8px; align-items: stretch; text-align: left; }
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
 
-  .contact-info { padding: 0 12px; }
-  .contact-form { padding: 0 12px; }
-  .contact-form form { padding-top: 0; margin-left: 0; max-width: 100%; }
-  .contact-form input,
-  .contact-form textarea { max-width: 100%; box-sizing: border-box; }
+    .description, .image {
+        flex: 100%;
+        margin: 10px;
+    }
 
-  /* Footer */
-  footer { grid-template-columns: 1fr; text-align: center; }
-  .home-service {margin: 0; padding: 0 12px;}
+    .image img {
+        width: 90%;
+        height: auto;
+        margin: auto;
+    }
+
+    .home-service {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .web-design {
+        margin-left: 0;
+    }
+
+    .project {
+        width: 90%;
+    }
+
+    .bar {
+        width: 90%;
+    }
+
+    .percent {
+        margin-left: 0;
+    }
+
+    .contact-item {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contact-icon {
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    .contact-form form {
+        max-width: 320px;
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 40px;
+    }
+
+    .content {
+        padding: 20px;
+    }
 }
 
-@media (max-width: 420px) {
-  h2 { font-size: 2rem; }
-  h4 { font-size: 1.2rem; }
-  .percentage { font-size: 0.9rem; }
-  .bar { height: 6px; }
-  #backToTop { right: 12px; bottom: 12px; width: 40px; height: 40px; font-size: 1rem; }
 
-  .pictures { gap: 12px;  }
-  .home-realisations { gap: 30px; padding-bottom: 32px; }
+@media (max-width: 480px) {
 
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button, .moncv, #projets {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    footer nav ol {
+        flex-direction: column;
+        gap: 15px;
+    }
 }

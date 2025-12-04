@@ -72,10 +72,12 @@ document.addEventListener('DOMContentLoaded', () => {
     backBtn.textContent = '↑';
     document.body.appendChild(backBtn);
 
-    window.addEventListener('scroll', () => {
+    const toggleBackBtn = () => {
         const show = window.scrollY > 400;
-        backBtn.style.display = show ? 'block' : 'none';
-    });
+        backBtn.classList.toggle('show', show);
+    };
+    window.addEventListener('scroll', toggleBackBtn);
+    toggleBackBtn();
     backBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
     const y = document.getElementById('year');
