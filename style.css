@@ -471,8 +471,8 @@ nav ol {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(13, 24, 48, 0.534);
-    color: #eeeded;
+    background: rgba(20, 36, 70, 0.788);
+    color: #fff;
     border: none;
     border-radius: 50%;
     box-shadow: var(--shadow);
