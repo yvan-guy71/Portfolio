@@ -20,6 +20,7 @@
 body {
     background-color: var(--dark-bg);
     margin: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -64,6 +65,18 @@ nav ul {
     height: 2px;
     background: #000;
     display: block;
+}
+
+/* Active link highlight */
+nav a.active {
+    color: #0f658d;
+    text-decoration: underline;
+}
+
+/* Ensure hero image scales responsively */
+.image img {
+    max-width: 100%;
+    height: auto;
 }
 
 a {
@@ -477,8 +490,9 @@ nav ol {
     border-radius: 50%;
     box-shadow: var(--shadow);
     cursor: pointer;
-    z-index: 9999;
+    z-index: 1000;
     opacity: 1;
+    padding: 10px 15px;
     transform: translateY(10px);
     transition: opacity 0.25s ease, transform 0.25s ease;
     font-size: 1.2rem;
@@ -543,6 +557,16 @@ ul li:hover {
 
 
 @media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        margin: 0;
+        overflow-x: hidden;
+    }
 
     header {
         flex-direction: column;
@@ -551,6 +575,17 @@ ul li:hover {
     nav {
         flex-direction: column;
         align-items: center;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+    #main-nav ul {
+        display: none;
+        width: 100%;
+    }
+    #main-nav ul.open {
+        display: flex;
     }
 
     nav ul {
@@ -564,8 +599,8 @@ ul li:hover {
     }
 
     .image img {
-        width: 90%;
-        height: auto;
+        width: 90% !important;
+        height: auto !important;
         margin: auto;
     }
 
@@ -574,10 +609,62 @@ ul li:hover {
         align-items: center;
         gap: 40px;
     }
+    
+    .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .about-me img {
+    width: 90% !important;
+    height: auto !important;
+    margin: auto;
+}
+
+    .about-me p {
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+
+}
+
+    em {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+}
 
     .web-design {
-        margin-left: 0;
+      margin: 0;
+}
+    .dev-web {
+      margin: 0;
     }
+    .geeks {
+      margin: 0;
+    }
+    .projet-realise, .année-experience {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .clients-satisfaits {
+        flex-direction: column;
+        margin: 0;
+    }
+    #backToTop {
+        right: 10px;
+        bottom: 15px;
+        padding: 8px 10px;
+
+    }
+    #backToTop.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
     .project {
         width: 90%;
